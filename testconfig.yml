@@ -1,9 +1,9 @@
 
 application:
   name:
-  url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-  user: Admin
-  password: admin123
+  url: https://movita.com.tr/
+  user: demomovita
+  password: 1192movita
   admin:
   adminpassword:
 
