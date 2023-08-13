@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public final class TestConfiguration {
     private static TestConfiguration instance;
-    public static String ymlFilePath = "src/main/resources/testconfig.yml";
+    public static String ymlFilePath = "testconfig.yml";
     private TestConfig appConfig;
 
     private TestConfiguration() throws IOException {
