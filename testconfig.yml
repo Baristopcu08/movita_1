@@ -1,0 +1,13 @@
+
+application:
+  name:
+  url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+  user: Admin
+  password: admin123
+  admin:
+  adminpassword:
+
+tests:
+  browser: chrome
+  screenshots: failure # failure oder all
+
