@@ -4,15 +4,8 @@ Feature: feature
   Scenario: scenario
 
     Given user opens the homepage
-    When  user into the field "Username" enters the value "Admin"
-    And   user into the field "Password" enters the value "admin123"
-    And   user clicks the "Login" button
-    And   user clicks the "Admin" button
-    And   user into the field "Username" enters the value "Admin"
-    And   user clicks the "Search" button
-    And   user clicks with locator type "xpath" and locator value "//li[.//*[contains(.,'Job')]]"
-
-  Scenario: Menu
-
-    Given user opens the homepage
-    And User Clicks Menu "Kurumsal" , "Hakkımızda"
+    When  user clicks the "GİRİŞ Yap" button
+    And   user into the field "username" enters the value "demomovita"
+    And   user into the field "password" enters the value "1192movita"
+    And   user clicks the "Giriş Yap" button
+    Then  should be visible "Demo Filo (129)"

@@ -9,8 +9,8 @@ import java.text.MessageFormat;
 
 public class TextfieldControl extends WebControl {
 
-    public static final String INPUT = "//input[./ancestor::div[contains(@class, \"oxd-input-group\") and .//*[contains(., \"{0}\")]]]";
-    public static final String INPUT1 = "//input[./ancestor::div[contains(@class, \"oxd-input-group\") and .//*[contains(., \"{0}\")]]]";
+    public static final String INPUT = "//input[@name=\"{0}\"]";
+    public static final String SPAN = "//span[contains(.,\"{0}\")]";
 
     public TextfieldControl(By locator) {
         super(locator);
@@ -24,7 +24,7 @@ public class TextfieldControl extends WebControl {
         String xpath = "((" +
                 MessageFormat.format(INPUT, label) +
                 ") | (" +
-                MessageFormat.format(INPUT1, label) +
+                MessageFormat.format(SPAN, label) +
                 "))[" + no +"]";
 
 
